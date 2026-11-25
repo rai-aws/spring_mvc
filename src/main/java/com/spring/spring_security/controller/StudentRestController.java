@@ -45,15 +45,6 @@ public class StudentRestController {
         this.studentService = studentService;
     }
 
-    // @PostConstruct 
-    // public void initialize(){
-    //     theStudents = new ArrayList<>();
-
-    //     theStudents.add(new Student("Light", "Yagami"));
-    //     theStudents.add(new Student("Saber", "Nana"));
-    //     theStudents.add(new Student("Alu", "Card"));
-    // }
-
     /**
      * Retrieves the list of students.
      *

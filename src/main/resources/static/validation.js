@@ -54,14 +54,16 @@ function validateStudentForm(){
     return isValid
 }
 
+
 // Clear validation error messages and styles
 function clearValidationStyles() {
-    const fields = ["firstName", "lastName", "email"]
-    fields.forEach(fieldId => {
-        const element = document.getElementById(fieldId)
-        const errorSpan = document.getElementById(`${fieldId}Error`)
-        if(element) element.classList.remove("invalid")
-        if(errorSpan) element.textContent = ""
-    })
+    const fields = ["firstName", "lastName", "email"];
 
+    fields.forEach(fieldId => {
+        const element = document.getElementById(fieldId);
+        const errorSpan = document.getElementById(`${fieldId}Error`);
+
+        if(element) element.classList.remove("invalid");
+        if(errorSpan) errorSpan.textContent = "";
+    });
 }
